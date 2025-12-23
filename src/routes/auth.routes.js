@@ -5,9 +5,7 @@ const User = require("../models/User");
 
 const router = express.Router();
 
-/* =========================
-   REGISTER
-========================= */
+
 router.post("/register", async (req, res) => {
   try {
     console.log("REGISTER BODY:", req.body);

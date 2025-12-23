@@ -37,7 +37,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
   if (res.ok) {
     localStorage.setItem("token", data.token);
 
-    // 🔥 STORE USER ID
+    
     const decoded = parseJwt(data.token);
     localStorage.setItem("userId", decoded.id);
 

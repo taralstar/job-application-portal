@@ -13,8 +13,8 @@ router.post("/:jobId", auth, upload.single("resume"), async (req, res) => {
     }
 
     const application = await Application.create({
-      applier: req.user,          // ✅ Jobuser ID
-      job: req.params.jobId,      // ✅ Jober ID
+      applier: req.user,          
+      job: req.params.jobId,      
       resume: req.file.path
     });
 
