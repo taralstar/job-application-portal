@@ -6,10 +6,13 @@
     "start": "node src/app.js",
     "dev": "nodemon src/app.js"
   },
+  "engines": {
+    "node": "18.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Job Application Portal API built with Node.js, Express, MongoDB, JWT, and Multer",
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "cors": "^2.8.5",
